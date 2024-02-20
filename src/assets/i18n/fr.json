@@ -1,0 +1,139 @@
+{
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "Accueil"
+    },
+    "DASHBOARD": {
+      "TEXT": "Tableau de bord",
+      "LIST": {
+        "DASHBOARD1": "Tableau de bord 1",
+        "DASHBOARD2": "Tableau de bord 2",
+        "DOCTOR-DASHBOARD": "Tableau de bord du médecin",
+        "PATIENT-DASHBOARD": "Tableau de bord du patient"
+      }
+    },
+    "APPOINTMENTS": {
+      "TEXT": "Rendez-vous",
+      "LIST": {
+        "VIEW-APPOINTMENT": "Voir le rendez-vous",
+        "BOOK-APPOINTMENT": "Prendre rendez-vous",
+        "EDIT-APPOINTMENT": "Modifier le rendez-vous"
+      }
+    },
+    "DOCTORS": {
+      "TEXT": "Médecins",
+      "LIST": {
+        "ALL-DOCTOR": "Liste des médecins",
+        "ADD-DOCTOR": "Ajouter un médecin",
+        "EDIT-DOCTOR": "Modifier le médecin",
+        "PROFILE": "Profil du médecin"
+      }
+    },
+    "STAFF": {
+      "TEXT": "Personnel",
+      "LIST": {
+        "ALL-STAFF": "Tout le personnel",
+        "ADD-STAFF": "Ajouter du personnel",
+        "EDIT-STAFF": "Modifier le personnel",
+        "PROFILE": "Profil du personnel"
+      }
+    },
+    "PATIENTS": {
+      "TEXT": "Patients",
+      "LIST": {
+        "ALL-PATIENT": "Tous les patients",
+        "ADD-PATIENT": "Ajouter un patient",
+        "EDIT-PATIENT": "Modifier le patient",
+        "PROFILE": "Profil du patient"
+      }
+    },
+    "ROOMS": {
+      "TEXT": "Attribution des chambres",
+      "LIST": {
+        "ALLOTED-ROOMS": "Chambres attribuées",
+        "NEW-ALLOTMENT": "Nouvelle attribution",
+        "EDIT-ALLOTMENT": "Modifier l'attribution"
+      }
+    },
+    "BILLING": {
+      "TEXT": "Facturation",
+      "LIST": {
+        "BILL-LIST": "Liste des factures",
+        "ADD-BILL": "Ajouter une facture",
+        "INVOICE": "Facture"
+      }
+    },
+    "RECORDS": {
+      "TEXT": "Dossiers",
+      "LIST": {
+        "BIRTH-RECORDS": "Dossiers de naissance",
+        "DEATH-RECORDS": "Dossiers de décès"
+      }
+    },
+    "AMBULANCE": {
+      "TEXT": "Ambulance",
+      "LIST": {
+        "AMBULANCE-CALL-LIST": "Liste des appels d'ambulance",
+        "AMBULANCE-LIST": "Liste des ambulances"
+      }
+    },
+    "PHARMACY": {
+      "TEXT": "Pharmacie",
+      "LIST": {
+        "MEDICINE-LIST": "Liste des médicaments",
+        "ADD-MEDICINE": "Ajouter un médicament"
+      }
+    },
+    "DEPARTMENTS": {
+      "TEXT": "Départements",
+      "LIST": {
+        "DEPARTMENT-LIST": "Liste des départements",
+        "ADD-DEPARTMENT": "Ajouter un département"
+      }
+    },
+    "INVENTORY": {
+      "TEXT": "Inventaire",
+      "LIST": {
+        "ITEM-STOCK-LIST": "Liste des stocks d'articles",
+        "ISSUED-ITEMS": "Articles émis"
+      }
+    },
+    "DOCTOR": {    
+        "DASHBOARD": "Tableau de bord",
+        "APPOINTMENTS": "Rendez-vous",
+        "DOCTORS": "Médecins",
+        "PATIENTS": "Patients",
+        "SETTINGS": "Paramètres",
+        "CHAT": "Chat"
+    },
+    "PATIENT": {    
+      "TEXT": "Patient",
+      "DASHBOARD": "Tableau de bord",
+      "APPOINTMENTS": {
+        "TEXT": "Rendez-vous",
+        "LIST": {
+          "TODAY": "Rendez-vous d'aujourd'hui",
+          "UPCOMING": "Rendez-vous à venir",
+          "PAST": "Rendez-vous passés"
+        }
+      },
+      "PRESCRIPTIONS": "Ordonnances",
+      "MEDICAL-RECORD": "Dossier médical",
+      "BILLING": "Facturation",
+      "CHAT": "Chat",
+      "SETTINGS": "Paramètres"
+    },
+    "APPS": {
+      "TEXT": "-- Applications"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendrier"
+    },
+    "TASK": {
+      "TEXT": "Tâche"
+    },
+    "CONTACTS": {
+      "TEXT": "Contacts"
+    }
+  }
+}
