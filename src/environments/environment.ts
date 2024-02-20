@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiUrl: "http://localhost:4200",
-  clinique :1
+  clinique :1,
+  parc :1
 };
 
 /*

@@ -7,7 +7,7 @@ import { environment } from "src/environments/environment";
 @Injectable()
 export class DoctorsService extends UnsubscribeOnDestroyAdapter {
   // private readonly API_URL = "assets/data/doctors.json";
-  private readonly API_URL = "http://localhost:8081/doctor";
+  private readonly API_URL = "http://localhost:8081/driver";
   isTblLoading = true;
   dataChange: BehaviorSubject<Doctors[]> = new BehaviorSubject<Doctors[]>([]);
   // Temporarily stores data from dialogs
@@ -23,7 +23,7 @@ export class DoctorsService extends UnsubscribeOnDestroyAdapter {
   }
   /** CRUD METHODS */
   getAllDoctorss(): void {
-    this.subs.sink = this.httpClient.get<Doctors[]>(this.API_URL+"/all").subscribe(
+    this.subs.sink = this.httpClient.get<Doctors[]>(this.API_URL).subscribe(
       (data) => {
         this.isTblLoading = false;
         this.dataChange.next(data);

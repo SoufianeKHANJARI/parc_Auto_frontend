@@ -3,23 +3,25 @@ export class Doctors {
   id: number;
   img: string;
   name: string;
-  email: string;
+  mail: string;
   date: string;
   specialization: string;
-  mobile: string;
-  department: string;
+  phone: string;
+  address: string;
   degree: string;
   entrepriseID:number;
+ 
+ 
   constructor(doctors) {
     {
       this.id = doctors.id || this.getRandomID();
       this.img = doctors.avatar || "assets/images/user/user1.jpg";
       this.name = doctors.name || "";
-      this.email = doctors.email || "";
+      this.mail = doctors.mail || "";
       this.date = formatDate(new Date(), "yyyy-MM-dd", "en") || "";
       this.specialization = doctors.specialization || "";
-      this.mobile = doctors.mobile || "";
-      this.department = doctors.department || "";
+      this.phone = doctors.phone || "";
+      this.address = doctors.address || "";
       this.degree = doctors.degree || "";
       
       this.entrepriseID= 1;

@@ -23,6 +23,15 @@
     "DOCTORS": {
       "TEXT": "Doctors",
       "LIST": {
+        "ALL-CARS": "All Cars",
+        "ADD-DOCTOR": "Add Doctor",
+        "EDIT-DOCTOR": "Edit Doctor",
+        "PROFILE": "Doctor Profile"
+      }
+    },
+    "CARS": {
+      "TEXT": "Doctors",
+      "LIST": {
         "ALL-DOCTOR": "All Doctors",
         "ADD-DOCTOR": "Add Doctor",
         "EDIT-DOCTOR": "Edit Doctor",

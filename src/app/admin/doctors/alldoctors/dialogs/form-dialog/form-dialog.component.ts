@@ -52,14 +52,14 @@ export class FormDialogComponent {
       id: [this.doctors.id],
       img: [this.doctors.img],
       name: [this.doctors.name],
-      email: [this.doctors.email],
+      email: [this.doctors.mail],
       date: [
         formatDate(this.doctors.date, "yyyy-MM-dd", "en"),
         [Validators.required],
       ],
       specialization: [this.doctors.specialization],
-      mobile: [this.doctors.mobile],
-      department: [this.doctors.department],
+      mobile: [this.doctors.phone],
+      address: [this.doctors.address],
       degree: [this.doctors.degree],
     });
   }
