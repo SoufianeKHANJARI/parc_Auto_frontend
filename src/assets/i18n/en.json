@@ -29,6 +29,24 @@
         "PROFILE": "Doctor Profile"
       }
     },
+    "AMENDES": {
+      "TEXT": "Amendes",
+      "LIST": {
+        "ALL-AMENDE": "All Amendes",
+        "ADD-AMENDE": "Add Amende",
+        "EDIT-AMENDE": "Edit Amende",
+        "PROFILE": "Doctor Profile"
+      }
+    },
+    "MISSIONS": {
+      "TEXT": "Missions",
+      "LIST": {
+        "ALL-MISSION": "All Missions",
+        "ADD-MISSION": "Add Mission",
+        "EDIT-MISSION": "Edit Mission",
+        "PROFILE": "Doctor Profile"
+      }
+    },
     "STAFF": {
       "TEXT": "Staff",
       "LIST": {

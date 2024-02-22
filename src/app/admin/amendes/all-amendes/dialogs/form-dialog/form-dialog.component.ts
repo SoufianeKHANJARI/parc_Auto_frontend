@@ -1,14 +1,17 @@
 import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 import { Component, Inject } from "@angular/core";
-import { DoctorsService } from "../../doctors.service";
+
+
 import {
   UntypedFormControl,
-  Validators, 
+  Validators,
   UntypedFormGroup,
   UntypedFormBuilder,
 } from "@angular/forms";
-import { Doctors } from "../../doctors.model";
+
 import { formatDate } from "@angular/common";
+import { AmendeService } from "../../amende.service";
+import { Amende } from "../../amende";
 @Component({
   selector: "app-form-dialog",
   templateUrl: "./form-dialog.component.html",
@@ -17,24 +20,25 @@ import { formatDate } from "@angular/common";
 export class FormDialogComponent {
   action: string;
   dialogTitle: string;
-  doctorsForm: UntypedFormGroup;
-  doctors: Doctors; 
+  amendesForm: UntypedFormGroup;
+  amendes: Amende;
+  
   constructor(
     public dialogRef: MatDialogRef<FormDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-    public doctorsService: DoctorsService,
+    public AmendeService: AmendeService,
     private fb: UntypedFormBuilder
   ) {
     // Set the defaults
     this.action = data.action;
     if (this.action === "edit") {
-      this.dialogTitle = data.doctors.name;
-      this.doctors = data.doctors;
+      this.dialogTitle = data.amendes.name;
+      this.amendes = data.amendes;
     } else {
-      this.dialogTitle = "New Doctors";
-      this.doctors = new Doctors({});
+      this.dialogTitle = "New Amendes";
+      this.amendes = new Amende({});
     }
-    this.doctorsForm = this.createContactForm();
+    this.amendesForm = this.createContactForm();
   }
   formControl = new UntypedFormControl("", [
     Validators.required,
@@ -49,18 +53,27 @@ export class FormDialogComponent {
   }
   createContactForm(): UntypedFormGroup {
     return this.fb.group({
-      id: [this.doctors.id],
-      img: [this.doctors.img],
-      name: [this.doctors.name],
-      email: [this.doctors.email],
-      date: [
-        formatDate(this.doctors.date, "yyyy-MM-dd", "en"),
+      // idAmende: [this.amendes.idAmende],
+      frais: [this.amendes.frais],
+      motif: [this.amendes.motif],
+      // IsContested: [this.amendes.IsContested],
+      // IsPayed: [this.amendes.IsPayed],
+      dateRecuAmende: [
+        formatDate(this.amendes.dateRecuAmende, "yyyy-MM-dd", "en"),
         [Validators.required],
       ],
-      specialization: [this.doctors.specialization],
-      mobile: [this.doctors.mobile],
-      department: [this.doctors.department],
-      degree: [this.doctors.degree],
+      DateDeFAitAmende: [
+        formatDate(this.amendes.DateDeFAitAmende, "yyyy-MM-dd", "en"),
+        [Validators.required],
+      ],
+      // DatePayement: [
+      //   formatDate(this.amendes.DatePayement, "yyyy-MM-dd", "en"),
+      //   [Validators.required],
+      // ],
+      // id_mission: [this.amendes.id_mission],
+      // id_parc: [this.amendes.id_parc],
+      // 
+      // emplacement: [this.amendes.emplacement],
     });
   }
   submit() {
@@ -70,6 +83,6 @@ export class FormDialogComponent {
     this.dialogRef.close();
   }
   public confirmAdd(): void {
-    this.doctorsService.addDoctors(this.doctorsForm.getRawValue());
+    this.AmendeService.addAmendes(this.amendesForm.getRawValue());
   }
 }

@@ -20,7 +20,7 @@ export class DoctorsService extends UnsubscribeOnDestroyAdapter {
   }
   getDialogData() {
     return this.dialogData;
-  }
+  } 
   /** CRUD METHODS */
   getAllDoctorss(): void {
     this.subs.sink = this.httpClient.get<Doctors[]>(this.API_URL+"/all").subscribe(

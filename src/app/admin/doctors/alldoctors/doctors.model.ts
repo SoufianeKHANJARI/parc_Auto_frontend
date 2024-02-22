@@ -9,7 +9,7 @@ export class Doctors {
   mobile: string;
   department: string;
   degree: string;
-  entrepriseID:number;
+  entrepriseID:number; 
   constructor(doctors) {
     {
       this.id = doctors.id || this.getRandomID();

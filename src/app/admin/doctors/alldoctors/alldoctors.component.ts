@@ -18,7 +18,7 @@ import { UnsubscribeOnDestroyAdapter } from "src/app/shared/UnsubscribeOnDestroy
   templateUrl: "./alldoctors.component.html",
   styleUrls: ["./alldoctors.component.sass"],
 })
-export class AlldoctorsComponent
+export class AlldoctorsComponent 
   extends UnsubscribeOnDestroyAdapter
   implements OnInit
 {
